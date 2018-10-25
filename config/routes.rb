@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'toppages/index'
   get 'relationships/create'
   get 'relationships/destroy'
   root to: 'tasks#index'
