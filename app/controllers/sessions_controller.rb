@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+  def index
+  end
+
   def new
   end
 
@@ -16,7 +19,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    flash[:success] = 'ログアウトしました'
+    flash[:success] = 'ログアウトしました。'
     redidect_to root_url
   end
 
