@@ -7,7 +7,7 @@
     end
 
     def show
-      @user = User.find(params[:page])
+      @user = User.find(params[:id])
     end
 
     def new
